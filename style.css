@@ -11,6 +11,15 @@
 body {
   font-family: var(--main-font);
   background-color: var(--main-color);
+  /* height: 1000vh; */
+}
+#header {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.158);
+
+  height: 70px;
 }
 #navbar__container {
   width: 100%;
@@ -18,10 +27,6 @@ body {
   background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
-  display: sticky;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.158);
 }
 
 /*Navbar Logo and Text*/
@@ -91,4 +96,36 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.cake__main__content {
+  height: 50vh;
+  /* width: 80%; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cake__main__image {
+  height: 200px;
+  width: 200px;
+}
+.cake__main__image__container {
+  position: relative;
+  z-index: 10;
+}
+.cake__main__image__container::before {
+  content: "";
+  position: absolute;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  top: 50px;
+  z-index: -1;
+  background-image: linear-gradient(60deg, #c0392b, #8e44ad);
+  transform: skew(-10deg);
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
 }
