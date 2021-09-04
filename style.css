@@ -291,3 +291,21 @@ body {
   padding: 2px;
   border-radius: 50px;
 }
+#main__Kids__cake {
+  width: 95%;
+  margin: auto;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+}
+#main__missyou__cake {
+  width: 95%;
+  margin: auto;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+}
