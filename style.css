@@ -375,3 +375,33 @@ body {
   border-radius: 5px;
   border: 0.5px solid greenyellow;
 }
+
+footer {
+  height: 150px;
+  background-color: #5c59fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 10px;
+  align-items: center;
+}
+.footer__text h3 {
+  color: white;
+  font-size: 16px;
+}
+.footer__socials {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: white; */
+}
+.footer__socials img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and(min-width: 620px) {
+}
