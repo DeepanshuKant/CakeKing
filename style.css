@@ -53,6 +53,7 @@ body {
   align-items: center;
   width: 250px;
   margin-right: 10px;
+  /* border: 1px solid red; */
 }
 .navbar__list__items {
   list-style: none;
@@ -403,5 +404,48 @@ footer {
   height: 30px;
 }
 
-@media screen and(min-width: 620px) {
+@media screen and (min-width: 620px) {
+  .navbar__list {
+    /* border: 1px solid red; */
+    width: 400px;
+  }
+  .navbar__list__items a {
+    font-size: 1rem;
+  }
+  .cakes__type__list {
+    /* width: 60%; */
+    justify-content: center;
+  }
+  .cake__types {
+    margin: 0 20px 0 20px;
+  }
+  .main__content__heading {
+    font-size: 2.5rem;
+  }
+  .cake__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cake__card {
+    width: 45%;
+  }
+  .cake__name {
+    font-size: 12.5px;
+    font-weight: bold;
+  }
+  .card__image {
+    width: 150px;
+  }
+  .contact__form form {
+    padding: 10px;
+  }
+  .main__contact__wrapper::before {
+    background-image: linear-gradient(
+      75deg,
+      rgba(255, 255, 255, 0.027),
+      rgba(128, 128, 128, 0.027)
+    );
+    border: 0.5px solid rgba(255, 255, 255, 0.062);
+  }
 }
