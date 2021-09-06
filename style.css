@@ -89,8 +89,8 @@ body {
   padding: 10px;
   background-image: linear-gradient(
     45deg,
-    rgba(238, 130, 238, 0.397),
-    rgba(255, 0, 0, 0.315)
+    rgba(238, 130, 238, 0.658),
+    rgba(255, 0, 0, 0.527)
   );
   justify-content: space-around;
   align-items: center;
@@ -218,8 +218,8 @@ body {
   margin-bottom: 5px;
   background-image: linear-gradient(
     45deg,
-    rgba(238, 130, 238, 0.397),
-    rgba(255, 0, 0, 0.315)
+    rgba(238, 130, 238, 0.658),
+    rgba(255, 0, 0, 0.527)
   );
   border-radius: 5px;
 }
@@ -268,6 +268,7 @@ body {
   border: none;
   /* border: 0.1px solid white; */
   border-radius: 90px;
+  transition: all 0.3s;
 }
 
 /* Main Annivarsary cakes ----------------------------------- */
@@ -461,7 +462,7 @@ footer {
   .cake__card {
     /* margin: 0; */
     box-shadow: none;
-    height: 300px;
+    height: 350px;
     width: 300px;
     transition: all 0.5s;
     flex-direction: column;
@@ -486,5 +487,74 @@ footer {
     transition: all 0.1s;
   }
   .card__content {
+    text-align: center;
+  }
+  .card__content h1 {
+    font-size: 1.3rem;
+  }
+  .cake__buy {
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+  }
+  .cake__buy button {
+    font-size: 1rem;
+    position: relative;
+    margin-bottom: 10px;
+    transition: all 0.6s;
+  }
+  .cake__size {
+    margin-top: 5px;
+  }
+  .cake__size label {
+    font-weight: bolder;
+  }
+  .card__content h6 {
+    font-size: 1rem;
+  }
+  .cake__buy button:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.356);
+    background-image: linear-gradient(
+      45deg,
+      rgba(240, 187, 89, 0.466),
+      rgba(250, 163, 2, 0.39)
+    );
+    top: -3px;
+    transition: all 0.6s;
+    cursor: pointer;
+  }
+  .cake__main__content {
+    height: 60vh;
+  }
+  .cake__main__content::after {
+    background-size: cover;
+    background-position: center;
+  }
+  .main__content__heading {
+    user-select: none;
+    font-size: 4rem;
+  }
+  .main__content__para {
+    user-select: none;
+    font-size: 1.5rem;
+  }
+  .main__button a {
+    font-size: 1.2rem;
+  }
+  .contact__heading h1 {
+    font-size: 3rem;
+  }
+  .contact__form form input,
+  .contact__form form textarea {
+    width: 400px;
+  }
+  .contact__form form input::placeholder,
+  .contact__form form textarea::placeholder {
+    text-align: center;
+    color: blue;
+    /* padding: 10px; */
+  }
+  .message {
+    font-size: 1rem;
   }
 }
