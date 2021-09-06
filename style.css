@@ -492,6 +492,10 @@ footer {
   .card__content h1 {
     font-size: 1.3rem;
   }
+  .cake__stars {
+    /* color: white; */
+    font-size: 0.8rem;
+  }
   .cake__buy {
     width: 100%;
     margin: auto;
@@ -556,5 +560,23 @@ footer {
   }
   .message {
     font-size: 1rem;
+  }
+  .card__image {
+    position: relative;
+  }
+  .card__image::before {
+    content: "Sale";
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 999;
   }
 }
