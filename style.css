@@ -414,6 +414,7 @@ footer {
   height: 30px;
 }
 
+/*Media for Tablet view---------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 620px) {
   .navbar__list {
     width: 400px;
@@ -474,6 +475,7 @@ footer {
   }
 }
 
+/*Media for laptop and big screens----------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1200px) {
   .cake__container {
     justify-content: space-evenly;
