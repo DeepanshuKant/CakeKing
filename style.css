@@ -90,6 +90,25 @@ body {
   align-items: center;
   border-radius: 5px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.363); */
+  position: relative;
+}
+.cakes__type__list::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg, #ff4c4d 25%, transparent 25%),
+    linear-gradient(225deg, #ff4c4c 25%, transparent 25%),
+    linear-gradient(45deg, #ff4c4c 25%, transparent 25%),
+    linear-gradient(315deg, #ff4c4c 25%, #e5e5f7 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  opacity: 0.2;
+  /* background-repeat: repeat; */
+  /* background-color: #e5e5f7; */
+  z-index: -1;
 }
 .cake__types {
   text-align: center;
@@ -106,7 +125,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  box-shadow: 8px 8px 1px var(--secondary-color);
+  /* box-shadow: 8px 8px 1px var(--secondary-color); */
   margin-bottom: 5px;
 }
 
@@ -199,7 +218,7 @@ body {
 }
 .cake__card {
   width: 100%;
-  height: 120px;
+  height: 130px;
   display: flex;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
@@ -230,13 +249,14 @@ body {
   flex-basis: 250px;
   margin-left: 5px;
   position: relative;
+  /* border: 1px solid red; */
 }
 .cake__stars {
   font-size: 0.6rem;
   font-weight: bold;
   /* color: red; */
   display: inline-block;
-  padding: 5px;
+  padding: 4px;
   color: black;
   border-radius: 5px;
   font-size: 0.4rem;
@@ -273,17 +293,20 @@ body {
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
 }
-
+.cake__size {
+  /* border: 1px solid red; */
+}
 .cake__size label {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 .cake__size select {
   background-image: linear-gradient(45deg, rgb(240, 187, 89), rgb(250, 163, 2));
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   outline: none;
   border: none;
-  padding: 2px;
+  padding: 1.8px;
   border-radius: 5px;
+  margin-bottom: 50px;
 }
 .cake__weight__desktop {
   display: none;
@@ -491,6 +514,7 @@ footer {
     border-radius: 50px;
     bottom: 0px;
     background-color: blue;
+    transition: width 0.5s ease;
   }
   .card__image {
     width: 100%;
@@ -562,7 +586,7 @@ footer {
     position: absolute;
     top: 40px;
     display: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .cake__size label {
     font-weight: bolder;
@@ -630,11 +654,32 @@ footer {
     left: 0;
     z-index: 21;
   }
-
+  .cakes__type__list {
+    /* border: 1px solid red; */
+    position: relative;
+  }
+  .cakes__type__list::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, #ff4c4d 25%, transparent 25%),
+      linear-gradient(225deg, #ff4c4c 25%, transparent 25%),
+      linear-gradient(45deg, #ff4c4c 25%, transparent 25%),
+      linear-gradient(315deg, #ff4c4c 25%, #e5e5f7 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    opacity: 0.2;
+    /* background-repeat: repeat; */
+    /* background-color: #e5e5f7; */
+    z-index: -1;
+  }
   .cake__image {
     width: 250px;
     height: 170px;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: all 0.3s ease;
   }
   .cake__image:hover {
@@ -683,12 +728,20 @@ footer {
     margin-top: 80px;
     background-color: #fff;
   }
+  #main__birthday__cake:hover .cake__heading::before {
+    width: 150%;
+    transition: width 0.5s ease;
+  }
 
   #main__annivarsary__cake {
     box-shadow: none;
     transition: all 0.5s;
     margin-top: 80px;
     background-color: #fff;
+  }
+  #main__annivarsary__cake:hover .cake__heading::before {
+    width: 150%;
+    transition: width 0.5s ease;
   }
 
   #main__Kids__cake {
@@ -697,6 +750,10 @@ footer {
     margin-top: 80px;
     background-color: #fff;
   }
+  #main__Kids__cake:hover .cake__heading::before {
+    width: 150%;
+    transition: width 0.5s ease;
+  }
 
   #main__missyou__cake {
     box-shadow: none;
@@ -704,6 +761,11 @@ footer {
     margin-top: 80px;
     background-color: #fff;
   }
+  #main__missyou__cake:hover .cake__heading::before {
+    width: 150%;
+    transition: width 0.5s ease;
+  }
+
   .cake__weight__desktop {
     /* border: 1px solid red; */
     display: inline-block;
