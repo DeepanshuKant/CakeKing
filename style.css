@@ -99,15 +99,17 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(135deg, #ff4c4d 25%, transparent 25%),
+  /* background-image: linear-gradient(135deg, #ff4c4d 25%, transparent 25%),
     linear-gradient(225deg, #ff4c4c 25%, transparent 25%),
     linear-gradient(45deg, #ff4c4c 25%, transparent 25%),
     linear-gradient(315deg, #ff4c4c 25%, #e5e5f7 25%);
-  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-position: 10px 0, 10px 0, 0 0, 0 0; */
   background-size: 20px 20px;
-  opacity: 0.2;
+  border-radius: 20px;
+  /* opacity: 0.2; */
   /* background-repeat: repeat; */
-  /* background-color: #e5e5f7; */
+  background-color: rgba(128, 128, 128, 0.205);
+  /* backdrop-filter: blur(10px); */
   z-index: -1;
 }
 .cake__types {
@@ -124,7 +126,7 @@ body {
 .cake__image {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 10px;
   /* box-shadow: 8px 8px 1px var(--secondary-color); */
   margin-bottom: 5px;
 }
@@ -205,9 +207,12 @@ body {
   margin: auto;
   border-radius: 5px;
   margin-top: 10px;
+  position: relative;
+  /* display: inline-block; */
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.363); */
 }
+
 .cake__heading {
   text-align: center;
 }
@@ -221,22 +226,23 @@ body {
   height: 130px;
   display: flex;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
   border-radius: 5px;
   padding: 5px;
   margin-top: 20px;
   margin-bottom: 5px;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     45deg,
     rgba(238, 130, 238, 0.658),
     rgba(255, 0, 0, 0.527)
-  );
+  ); */
   border-radius: 5px;
 }
 .card__image {
-  width: 100px;
-  height: 100px;
+  width: 50%;
+  height: 110px;
   border-radius: 5px;
+  /* border: 1px solid black; */
 }
 .card__image img {
   width: 100%;
@@ -245,8 +251,8 @@ body {
 }
 .card__content {
   width: 100%;
-  height: 100px;
-  flex-basis: 250px;
+  height: 110px;
+  flex-basis: auto;
   margin-left: 5px;
   position: relative;
   /* border: 1px solid red; */
@@ -264,8 +270,8 @@ body {
   background-image: linear-gradient(45deg, rgb(255, 208, 0), rgb(68, 218, 9));
 }
 .cake__name {
-  font-size: 17px;
-  font-weight: normal;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 .cake__buy {
   width: 140px;
@@ -276,10 +282,11 @@ body {
 }
 .cake__buying__button {
   padding: 5px 7px;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   background-image: linear-gradient(45deg, rgb(240, 187, 89), rgb(250, 163, 2));
   color: black;
   border: none;
+  /* margin-top: 10px; */
   border-radius: 90px;
   transition: all 0.3s;
 }
@@ -291,7 +298,20 @@ body {
   border-radius: 5px;
   margin-top: 10px;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.363); */
+}
+#main__birthday__cake{
+  background-color: #fff;
+}
+#main__annivarsary__cake{
+  background-color: #fff;
+}
+
+#main__Kids__cake{
+  background-color: #fff;
+}
+#main__missyou__cake{
+  background-color: #fff;
 }
 .cake__size {
   /* border: 1px solid red; */
@@ -317,7 +337,7 @@ body {
   border-radius: 5px;
   margin-top: 10px;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.363); */
 }
 #main__missyou__cake {
   width: 95%;
@@ -326,7 +346,7 @@ body {
   border-radius: 5px;
   margin-top: 10px;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.363); */
 }
 /* Contact section----------------------------------------------------------- */
 
@@ -472,6 +492,13 @@ footer {
     );
     border: 0.5px solid rgba(255, 255, 255, 0.062);
   }
+
+  #main__birthday__cake{
+    background-color: #fff;
+  }
+  #main__annivarsary__cake{
+    background-color: #fff;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -535,9 +562,11 @@ footer {
   }
   .card__content {
     text-align: center;
+    height: 150px;
   }
   .card__content h1 {
     position: absolute;
+
     top: 10px;
     font-size: 1rem;
     font-weight: normal;
